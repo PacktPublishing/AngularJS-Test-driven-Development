@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body ng-app="search">
+	<div ng-controller='SearchController'>
+		<input type='text' ng-model='searchQuery'></input>
+		<button ng-click='search(searchQuery)'>search</button>
+		<ul>
+			<li ng-repeat='result in results'><a href='#/detail/{{result.id}}'>{{result.name}}</a></li>
+		</ul>
+<!-- 		<div ng-show="resultDetail" id="SearchResultDetail">
+		</div> -->
+		<div ng-view></div>
+	</div>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src='app/search.js'></script>
+<script type="text/javascript" src='app/searchController.js'></script>
+<script type="text/javascript" src="app/splashController.js"></script>
+<script type="text/javascript" src="app/searchDetailController.js"></script>
+</body>
+</html>

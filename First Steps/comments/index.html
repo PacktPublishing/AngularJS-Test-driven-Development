@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body ng-app='comments'>
+	<div ng-controller='CommentController'>
+		<input type="text" ng-model='newComment'/>
+		<button type="button" ng-click="add(newComment)">Submit</button>
+		
+		<ul>
+			<li ng-repeat='comment in comments'>
+				{{comment.value}}
+				<button type="button" ng-click='like(comment)'>like</button>
+				<span ng-bind="comment.likes"></span>
+			</li>
+
+		</ul>
+	</div>
+
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="app/comments.js"></script>
+<script type="text/javascript" src="app/commentController.js"></script>
+</body>
+</html>

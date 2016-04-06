@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Protractor</title>
+</head>
+<body ng-app='todo'>
+	<div ng-controller='TodoController'>
+		<ul ng-repeat='item in list'>
+			<li>{{item}}</li>
+		</ul>
+	</div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="app/todo.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Protractor</title>
+</head>
+<body ng-app='todo'>
+	<div ng-controller='TodoController'>
+		<input ng-model='newTodoItem' />
+		<button id='AddItemButton' ng-click='add(newTodoItem)'>Add Item</button>
+		<ul ng-repeat='item in list'>
+			<li>{{item}}</li>
+		</ul>
+	</div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="app/todo.js"></script>
+</body>
+</html> -->
