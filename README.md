@@ -4,7 +4,7 @@ This is the code repository for [AngularJS Test-driven Development](https://www.
 
 All of the code is organized into folders.
 
-## Related Clojure books
+## Related AngularJS books
 
 * [AngularJS Web Application Development Cookbook](https://www.packtpub.com/web-development/angularjs-web-application-development-cookbook?utm_source=github&utm_medium=repository&utm_campaign=9781783283354)
 * [Learning AngularJS Testing-Video](https://www.packtpub.com/web-development/learning-angularjs-testing-video?utm_source=github&utm_medium=repository&utm_campaign=9781782174899)
